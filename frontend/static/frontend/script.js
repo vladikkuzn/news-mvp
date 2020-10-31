@@ -1,11 +1,15 @@
-function getCookie(name) {
+function getCookie(name)
+ {
     let cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
+    if (document.cookie && document.cookie !== '')
+     {
         const cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
+        for (let i = 0; i < cookies.length; i++)
+         {
             const cookie = cookies[i].trim();
             // Does this cookie string begin with the name we want?
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+            if (cookie.substring(0, name.length + 1) === (name + '='))
+            {
                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                 break;
             }
@@ -34,7 +38,7 @@ function buildNews()
         let list = data
         for (let i in list)
         {
-            var item = `<div id="data-row-${i}" class="news-wrapper flex-wrapper">
+            let item = `<div id="data-row-${i}" class="news-wrapper flex-wrapper">
                     <a style="flex: 7" href=${list[i].link}>
                         <span class="title">${list[i].title}</span><br/>
                         <span class="amount_of_upvotes">${list[i].amount_of_upvotes}</span>
@@ -50,6 +54,9 @@ function buildNews()
                 </div>
             `
             wrapper.innerHTML += item
+
+            var editBtn = document.getElementsByClassName('edit')[i]
+            editBtn.addEventListener('click', editItem)
         }
     })
 
@@ -60,7 +67,7 @@ document.addEventListener("DOMContentLoaded", submitForm)
 function submitForm()
 {
 let form = document.getElementById('form-wrapper')
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('Form submited')
     //let url = 'http://127.0.0.1:8000/api/post-create/'
@@ -85,6 +92,11 @@ form.addEventListener('submit', (e) =>{
     .then(() => {
         buildNews()
         document.getElementById('form').reset()
+        })
     })
-})
+}
+
+function editItem()
+{
+    console.log('Item clicked')
 }
