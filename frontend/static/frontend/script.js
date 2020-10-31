@@ -127,4 +127,14 @@ function editItem(item)
 function deleteItem(item)
 {
     console.log('Delete clicked: ', item)
+    let url = `https://news-mvp.herokuapp.com/api/post-delete/${activeItem.id}/`
+
+    fetch(url, {
+        method: 'DELETE',
+        headers: {
+            'Content-type': 'application/json',
+            'X-CSRFToken': csrftoken
+        }
+    })
+    .then(() => buildNews())
 }
