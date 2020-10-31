@@ -35,12 +35,12 @@ function buildNews()
         for (let i in list)
         {
             var item = `<div id="data-row-${i}" class="news-wrapper flex-wrapper">
-                    <div style="flex: 7">
+                    <a style="flex: 7" href=${list[i].link}>
                         <span class="title">${list[i].title}</span><br/>
                         <span class="amount_of_upvotes">${list[i].amount_of_upvotes}</span>
                         <span class="author-name">${list[i].author_name}</span><br/>
                         <span class="creation-date">${new Date(list[i].creation_date).toDateString()}</span>
-                    </div>
+                    </a>
                     <div style="flex: 1">
                         <button class="btn btn-sm btn-outline-info edit">Edit </button>
                     </div>
