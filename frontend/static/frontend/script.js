@@ -54,9 +54,14 @@ function buildNews()
                 </div>
             `
             wrapper.innerHTML += item
+        }
 
-            var editBtn = document.getElementsByClassName('edit')[i]
-            editBtn.addEventListener('click', editItem)
+        for (let i in list)
+        {
+            let editBtn = document.getElementsByClassName('edit')[i]
+            editBtn.addEventListener('click', function(){
+                editItem(list[i])
+            })
         }
     })
 
@@ -96,7 +101,7 @@ form.addEventListener('submit', (e) => {
     })
 }
 
-function editItem()
+function editItem(item)
 {
-    console.log('Item clicked')
+    console.log('Item clicked: ', item )
 }
