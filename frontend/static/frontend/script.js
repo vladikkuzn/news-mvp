@@ -78,6 +78,12 @@ form.addEventListener('submit', (e) => {
     //let url = 'http://127.0.0.1:8000/api/post-create/'
     let url = 'https://news-mvp.herokuapp.com/api/post-create/'
 
+    if(activeItem != null)
+    {
+        url = `https://news-mvp.herokuapp.com/api/post-update/${activeItem.id}/`
+        activeItem = null
+    }
+
     let title = document.getElementById('title').value
     let link = document.getElementById('link').value
     let author = document.getElementById('author-name').value
@@ -101,7 +107,13 @@ form.addEventListener('submit', (e) => {
     })
 }
 
+var activeItem = null
+
 function editItem(item)
 {
-    console.log('Item clicked: ', item )
+    console.log('Item clicked: ', item)
+    activeItem = item
+    document.getElementById('title').value = activeItem.title
+    document.getElementById('link').value = activeItem.link
+    document.getElementById('author_name').value = activeItem.author_name
 }
