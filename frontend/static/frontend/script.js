@@ -115,5 +115,5 @@ function editItem(item)
     activeItem = item
     document.getElementById('title').value = activeItem.title
     document.getElementById('link').value = activeItem.link
-    document.getElementById('author_name').value = activeItem.author_name
+    document.getElementById('author-name').value = activeItem.author_name
 }
