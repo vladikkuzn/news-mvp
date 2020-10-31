@@ -82,6 +82,9 @@ form.addEventListener('submit', (e) =>{
             'author_name': author
         })
     })
-    .then(() =>buildNews())
+    .then(() => {
+        buildNews()
+        document.getElementById('form').reset()
+    })
 })
 }
