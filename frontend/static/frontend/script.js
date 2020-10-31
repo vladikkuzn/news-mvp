@@ -127,7 +127,7 @@ function editItem(item)
 function deleteItem(item)
 {
     console.log('Delete clicked: ', item)
-    let url = `https://news-mvp.herokuapp.com/api/post-delete/${activeItem.id}/`
+    let url = `https://news-mvp.herokuapp.com/api/post-delete/${item.id}/`
 
     fetch(url, {
         method: 'DELETE',
