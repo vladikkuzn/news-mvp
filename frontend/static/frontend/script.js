@@ -22,7 +22,8 @@ function buildNews()
 {
     let wrapper = document.getElementById('list-wrapper')
     wrapper.innerHTML = ''
-    let url = 'http://127.0.0.1:8000/api/posts/'
+    //let url = 'http://127.0.0.1:8000/api/posts/'
+    let url = 'https://news-mvp.herokuapp.com/api/posts/'
 
     fetch(url)
     .then((resp) => resp.json())
@@ -62,7 +63,8 @@ let form = document.getElementById('form-wrapper')
 form.addEventListener('submit', (e) =>{
     e.preventDefault()
     console.log('Form submited')
-    let url = 'http://127.0.0.1:8000/api/post-create/'
+    //let url = 'http://127.0.0.1:8000/api/post-create/'
+    let url = 'https://news-mvp.herokuapp.com/api/post-create/'
 
     let title = document.getElementById('title').value
     let link = document.getElementById('link').value
