@@ -88,19 +88,14 @@ WSGI_APPLICATION = 'news.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',
+        'NAME': 'dc15d5af3ih0bp',
+        'USER': 'nkjeblfvrplkee',
+        'PASSWORD': '56b7f1a267ea583062fdc0772f2c732b9875fba5b796114a628790bcdd27bb88',
+        'HOST': 'ec2-54-166-114-48.compute-1.amazonaws.com',
         'PORT': 5432,
     }
 }
 
-'''
-DATABASES = {
-    'default': dj_database_url.config()
-}
-'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
