@@ -1,0 +1,39 @@
+{% extends "frontend/layout.html" %}
+
+{% block body %}
+ 
+    <div class="container">
+
+        <div id="news-container">
+            <div id="form-wrapper">
+                <form id="form">
+                    <div class="flex-wrapper">
+                        <div style="flex: 2">
+                            <input id="title" class="form-controll" type="text" name="title" placeholder="Add news title" required>
+                        </div>
+                        <div style="flex: 2">
+                            <input id="link" class="form-controll" type="text" name="link" placeholder="Add news link" required>
+                        </div>
+                        <div style="flex: 2">
+                            <input id="author-name" class="form-controll" type="text" name="author-name" placeholder="Add author name" required>
+                        </div>
+                        <div style="flex: 1">
+                            <input id="submit" class="btn" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="list-wrapper">
+                    
+            </div>
+            
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block script %}
+<script src="static/frontend/script.js"></script>
+{% endblock %}
