@@ -59,8 +59,14 @@ function buildNews()
         for (let i in list)
         {
             let editBtn = document.getElementsByClassName('edit')[i]
+            let deleteBtn = document.getElementsByClassName('delete')[i]
+
             editBtn.addEventListener('click', function(){
                 editItem(list[i])
+            })
+
+            deleteBtn.addEventListener('click', function(){
+                deleteItem(list[i])
             })
         }
     })
@@ -116,4 +122,9 @@ function editItem(item)
     document.getElementById('title').value = activeItem.title
     document.getElementById('link').value = activeItem.link
     document.getElementById('author-name').value = activeItem.author_name
+}
+
+function deleteItem(item)
+{
+    console.log('Delete clicked: ', item)
 }
