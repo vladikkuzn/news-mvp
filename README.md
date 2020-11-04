@@ -8,7 +8,7 @@ To start app as docker container: docker-compose up<br/>
 To start app not as docker container: python manage.py runserver<br/>
 
 
-###/api - directory that is responsible for API
+### /api - directory that is responsible for API
   /migration - directory that is responsible for migrations
   /__init__.py - makes package from repository
   /admin.py - file that gives an opportunity to register model to admin\`s iterface
@@ -20,7 +20,7 @@ To start app not as docker container: python manage.py runserver<br/>
   /wiews.py - file that is responsible for API views
   
 
-###/frontend - directory that is responsive for frontend
+### /frontend - directory that is responsive for frontend
   /migration - directory that is responsible for migrations
   /__init__.py - makes package from repository
   /admin.py - file that gives an opportunity to register model to admin\`s iterface
