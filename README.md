@@ -9,33 +9,33 @@ To start app not as docker container: python manage.py runserver<br/>
 
 
 ### /api - directory that is responsible for API
-  /migration - directory that is responsible for migrations
-  /__init__.py - makes package from repository
-  /admin.py - file that gives an opportunity to register model to admin\`s iterface
-  /apps.py - file that is responsible for app settings
-  /models.py - file that is responsible for models
-  /serializers.py - file that is responsible for transforming models into JSON format(serializing)
-  /tests.py - file that is responsible for tests
-  /urls.py - file that is responsible for API routes
-  /wiews.py - file that is responsible for API views
+  /migration - directory that is responsible for migrations<br/>
+  /__init__.py - makes package from repository<br/>
+  /admin.py - file that gives an opportunity to register model to admin\`s iterface<br/>
+  /apps.py - file that is responsible for app settings<br/>
+  /models.py - file that is responsible for models<br/>
+  /serializers.py - file that is responsible for transforming models into JSON format(serializing)<br/>
+  /tests.py - file that is responsible for tests<br/>
+  /urls.py - file that is responsible for API routes<br/>
+  /wiews.py - file that is responsible for API views<br/>
   
 
 ### /frontend - directory that is responsive for frontend
-  /migration - directory that is responsible for migrations
-  /__init__.py - makes package from repository
-  /admin.py - file that gives an opportunity to register model to admin\`s iterface
-  /apps.py - file that is responsible for app settings
-  /models.py - file that is responsible for models
-  /tests.py - file that is responsible for tests
-  /urls.py - file that is responsible for frontend routes
-  /wiews.py - file that is responsible for frontend views
-  /static/frontend - directory that is reponsible for static files(.js, .css, images)
-  /templates/frontend - directory that is reponsible for HTML files
+  /migration - directory that is responsible for migrations<br/>
+  /__init__.py - makes package from repository<br/>
+  /admin.py - file that gives an opportunity to register model to admin\`s iterface<br/>
+  /apps.py - file that is responsible for app settings<br/>
+  /models.py - file that is responsible for models<br/>
+  /tests.py - file that is responsible for tests<br/>
+  /urls.py - file that is responsible for frontend routes<br/>
+  /wiews.py - file that is responsible for frontend views<br/>
+  /static/frontend - directory that is reponsible for static files(.js, .css, images)<br/>
+  /templates/frontend - directory that is reponsible for HTML files<br/>
 
-manage.py - tool for executing many Django-specific tasks
-.gitignore - file that is responsible for files that dont need to be uploaded to github
-Dockerfile - file for Docker container
-docker-compose - file for composing Docker container
-Procfile - file for Heroku
-runtime.txt - file for Heroku
-requirements.txt - requirements for project
+manage.py - tool for executing many Django-specific tasks<br/>
+.gitignore - file that is responsible for files that dont need to be uploaded to github<br/>
+Dockerfile - file for Docker container<br/>
+docker-compose - file for composing Docker container<br/>
+Procfile - file for Heroku<br/>
+runtime.txt - file for Heroku<br/>
+requirements.txt - requirements for project<br/>
