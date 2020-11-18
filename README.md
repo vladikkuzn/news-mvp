@@ -51,10 +51,10 @@ To start app not as docker container: python manage.py runserver<br/>
  * /static/frontend - directory that is reponsible for static files(.js, .css, images)<br/>
  * /templates/frontend - directory that is reponsible for HTML files<br/>
 
-* manage.py - tool for executing many Django-specific tasks<br/>
-* .gitignore - file that is responsible for files that dont need to be uploaded to github<br/>
-* Dockerfile - file for Docker container<br/>
-* docker-compose - file for composing Docker container<br/>
-* Procfile - file for Heroku<br/>
-* runtime.txt - file for Heroku<br/>
-* requirements.txt - requirements for project<br/>
+ manage.py - tool for executing many Django-specific tasks<br/>
+ .gitignore - file that is responsible for files that dont need to be uploaded to github<br/>
+ Dockerfile - file for Docker container<br/>
+ docker-compose - file for composing Docker container<br/>
+ Procfile - file for Heroku<br/>
+ runtime.txt - file for Heroku<br/>
+ requirements.txt - requirements for project<br/>
